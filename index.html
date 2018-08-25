@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe">
+            <br><br>
+            <label for="birthDate">Date of Birth:</label>
+            <input type="date" id="birthDate" name="birthDate">
+            <br><br>
+            <label for="favoriteAnimal">Favorite Animal:</label>
+            <input type="text" id="favoriteAnimal" name="favoriteAnimal" placeholder="Dog">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Account</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+            <br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required pattern=".{8,}" title="8 or more characters" placeholder="8 or more characters">
+            <br><br>
+            <label for="verifyPassword">Verify Password:</label>
+            <input type="password" id="verifyPassword" name="verifyPassword" required pattern=".{8,}" title="8 or more characters" placeholder="8 or more characters">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Contact</legend>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country"  placeholder="El Salvador">
+            <br><br>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Santa Tecla">
+            <br><br>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="">
+            <br><br>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="2222-2222">
+        </fieldset>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
